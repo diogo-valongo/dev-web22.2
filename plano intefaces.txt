@@ -1,0 +1,70 @@
+login:
+- cpf 
+- senha
+- funação-radiobox (paciente/adm/medico)
+- link pra registro
+registro:
+- nome
+- cpf
+- senha
+- plano de saude (dropdown ?)
+Area paciente:
+-ver consultas
+-pedir pra marcar consulta
+Marcar condsulta:
+-dropdown coom espcialidade
+-dropdown com medico baseado na resposta de cima
+-campo pra escolha de data ?datepicker?
+Area Medico:
+-ver consultas
+- medico pode ralizar uma consulta (desde que não realizada)
+- medico pode alterar consultas já realidadas por ele
+area adm:
+- cadastra adm
+-- mostra tabela pra seleção (remoção e edição de administradores)
+-- form pra adicao
+--- nome
+--- cpf
+--- senha
+--- seleção de especialidade (dropdown baseado nas especialidades)
+
+- cadastra medico
+-- mostra tabela pra seleção (remoção e edição de medicos)
+-- form pra adicao
+--- nome
+--- cpf
+--- crm
+--- estadocrm
+--- senha
+--- seleção de especialidade (dropdown baseado nas especialidades)
+
+- cadastra paciente
+-- mostra tabela pra seleção (remoção e edição de pacientes)
+-- form pra adicao
+--- nome
+--- cpf
+--- senha
+--- sleção do plano (dropdown baseado nos planos)
+
+- cadastra as epecialidades
+-- mostra tabela pra seleção (remoção e edição de especialidades)
+-- form pra adicao
+--- nome da especialidade
+
+- cadastra tipos planos de saude
+-- mostra tabela pra seleção (remoção e edição de planos)
+-- form pra adicao
+--- nome do plano 
+
+- controle de autorização de paciente
+-- mostra tabela pra seleção pacientes
+-- botão autorizar e botão desautorizar
+
+- controle de autorização de medico
+-- mostra tabela pra seleção medicos
+-- botão autorizar e botão desautorizar
+
+- visualiza consulta de um medico
+-- tebela com medicos 
+-- botão vizualiza consulta/update automatico das consultas na tabela de baixo
+
