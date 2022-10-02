@@ -1,2 +1,3 @@
 Duvidas:
-adms removem adms ?
+-adms removem adms ?
+-preciso fazer uma tela principal ? se sim com qual conteudo?

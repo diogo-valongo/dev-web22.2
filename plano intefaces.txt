@@ -56,7 +56,7 @@ area adm:
 -- form pra adicao
 --- nome do plano 
 
-- controle de autorização de paciente
+- controle de autorização de pacienteX
 -- mostra tabela pra seleção pacientes
 -- botão autorizar e botão desautorizar
 
