@@ -1,4 +1,4 @@
 Duvidas:
 - adms removem adms ?
 - preciso fazer uma tela principal ? se sim com qual conteudo?
-- precisa cadastrar tipoi de exame? ou vamos trabalharar com os 5 existentes no bd?
+- precisa cadastrar tipo de exame? ou vamos trabalhar com os 5 existentes no bd?
