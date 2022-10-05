@@ -69,7 +69,49 @@ and open the template in the editor.
                 </div>
             </div>
         </nav>
-        <div>eu sou o paciente</div>
+        <div class="container-sm mt-5">
+            <div>
+                <h1>Bem vindo(a) Paciente(substituir por nome quando possivel)</h1>
+                <h2 class="mt-5">Suas consultas</h2>
+            </div>
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Paciente</th>
+                    <th scope="col">Medico</th>
+                    <th scope="col">Realizada</th>
+                    <th scope="col">Data</th>
+                    <th scope="col">Descrição</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Maria</td>
+                    <td>Marcos</td>
+                    <td>não</td>
+                    <td>2022-09-12 11:00:19</td>
+                    <td>consulta da Maria</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Maria</td>
+                    <td>Flávia</td>
+                    <td>sim</td>
+                    <td>2022-08-25 12:35:47</td>
+                    <td>outra consulta da Maria</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td colspan="5">Em breve funcionando juntamente com o banco de dados...</td>
+                  </tr>
+                </tbody>
+              </table>
+            <div class="mt-5">
+                <a href="marcarconsulta.html" class="btn btn-primary" role="button">Marcar nova consulta</a>
+            </div>
+        </div>
         <script src="src/bootstrap/bootstrap.bundle.min.js"></script>
     </body>
 </html>

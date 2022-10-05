@@ -69,7 +69,38 @@ and open the template in the editor.
                 </div>
             </div>
         </nav>
-        <div>eu sou o marcaconsulta</div>
+        <div class="container-sm mt-5">
+            <div class="mb-3">
+                <h1>Nova consulta</h1>
+            </div>
+            <form>
+                <div class="mb-3 col-3">                
+                    <label class="form-label">Selecione uma especialidade</label>  
+                    <select class="mb-5 col-3 form-select" aria-label="Default select example">
+                        <option selected>Selecione uma especialidade</option>
+                        <option value="1">Especialidade 1</option>
+                        <option value="2">Especialidade 2</option>
+                        <option value="3">Essa parte sera implementada mais tarde quando existir o aceso ao bd</option>
+                    </select>
+                </div>
+                
+                <div class="mb-3 col-3">        
+                    <label class="form-label">Selecione o médico</label>        
+                    <select class="mb-5 col-3 form-select" aria-label="Default select example">
+                        <option selected>Selecione o medico</option>
+                        <option value="1">Medico 1</option>
+                        <option value="2">Medico 2</option>
+                        <option value="3">Lembrando que o medico será exibido de acordo com a especialidade escolhida anteriormente</option>
+                    </select>
+                </div>
+                <div class="mb-3 col-3">
+                    <label for="date" class="form-label">Selecione uma Data</label>
+                    <input type="date" class="form-control" id="date">
+                </div>
+
+                <button type="submit" class="btn btn-primary mb-3">Marcar consulta</button>
+            </form>            
+        </div>
         <script src="src/bootstrap/bootstrap.bundle.min.js"></script>
     </body>
 </html>

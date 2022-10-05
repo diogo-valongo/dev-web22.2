@@ -2,3 +2,5 @@ Duvidas:
 - adms removem adms ?
 - preciso fazer uma tela principal ? se sim com qual conteudo?
 - precisa cadastrar tipo de exame? ou vamos trabalhar com os 5 existentes no bd?
+- medico duplicado no bd
+- Data ao marcar consulta... só poderá ser selecionada uma data que esteja disponivel para o medico ?
