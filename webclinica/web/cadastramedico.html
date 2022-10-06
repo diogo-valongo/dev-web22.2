@@ -69,7 +69,124 @@ and open the template in the editor.
                 </div>
             </div>
         </nav>
-        <div>eu sou o cadastramedico</div>
+        <div class="container-sm mt-5">
+            <div>
+                <h2>Bem vindo(a) Administrador(substituir por nome quando possivel)</h2>
+                <h2 class="mt-5">Médicos</h2>
+            </div>
+            <form >
+    
+                <table id="select-table" class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col"><input name="select_all" value="1" type="checkbox"></th>
+                            <th scope="col">Nome</th>
+                            <th scope="col">CRM</th>
+                            <th scope="col">estado do CRM</th>
+                            <th scope="col">CPF</th>
+                            <th scope="col">Senha</th>
+                            <th scope="col">Autorizado</th>
+                            <th scope="col">Especialidade</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><input name="medico1" value="1" type="checkbox"></th>
+                            <td>Marcos</td>
+                            <td>1234</td>
+                            <td>RJ</td>
+                            <td>381.585.150-53</td>
+                            <td>111</td>
+                            <td>S</td>
+                            <td>Neurologia</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><input name="medico2" value="2" type="checkbox"></th>
+                            <td>Flávia</td>
+                            <td>4565</td>
+                            <td>RJ</td>
+                            <td>693.339.230-98</td>
+                            <td>111</td>
+                            <td>S</td>
+                            <td>Cardiologia</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><input name="medico3" value="3" type="checkbox"></th>
+                            <td>Marcos</td>
+                            <td>1234</td>
+                            <td>RJ</td>
+                            <td>381.585.150-53</td>
+                            <td>111</td>
+                            <td>S</td>
+                            <td>Neurologia</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><input name="medico4" value="4" type="checkbox"></th>
+                            <td colspan="7">Em breve funcionando juntamente com o banco de dados...</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="mt-2">
+                    <button type="submit" class="btn btn-danger mb-3">Remove Selecionado(s)</button>
+                </div>
+                <h3>Novos Dados:</h3>
+                <div class="mb-3 col-3">
+                    <label for="nome" class="form-label">Nome</label>
+                    <input type="nome" class="form-control" id="nome" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3 col-3">
+                    <label for="CRM" class="form-label">CRM</label>
+                    <input type="CRM" class="form-control" id="CRM" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3 col-3">
+                    <label for="estado" class="form-label">estado do CRM</label>
+                    <input type="estado" class="form-control" id="estado" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3 col-3">
+                    <label for="cpf" class="form-label">CPF</label>
+                    <input type="cpf" class="form-control" id="cpf" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3 col-3">
+                    <label for="senha" class="form-label">Senha</label>
+                    <input type="password" class="form-control" id="senha">
+                </div>
+                <div class="mb-3 col-3">
+                    <label class="form-check-label" for="defaultCheck1">Autorizado</label>
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                </div>
+                <div class="mb-2 col-3">                
+                    <label class="form-label">Selecione uma especialidade</label>  
+                    <select name="especialidade" class="mb-5 col-3 form-select" aria-label="Default select example">
+                        <option selected>Selecione uma especialidade</option>
+                        <option value="1">Especialidade 1</option>
+                        <option value="2">Especialidade 2</option>
+                        <option value="3">Essa parte sera implementada mais tarde quando existir o aceso ao bd</option>
+                    </select>
+                </div>
+                <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                    <button type="submit" class="btn btn-success">Novo médico</button>
+                    <button type="submit" class="btn btn-warning">Altera Selecionado</button>
+                </div>
+            </form>
+        </div>
+        <script>
+            var dataTable = document.getElementById('select-table');
+            var checkItAll = dataTable.querySelector('input[name="select_all"]');
+            var inputs = dataTable.querySelectorAll('tbody>tr>th>input');
+    
+            checkItAll.addEventListener('change', function () {
+                if (checkItAll.checked) {
+                    inputs.forEach(function (input) {
+                        input.checked = true;
+                    });
+                }
+                else {
+                    inputs.forEach(function (input) {
+                        input.checked = false;
+                    });
+                }
+            });
+        </script>
         <script src="src/bootstrap/bootstrap.bundle.min.js"></script>
     </body>
 </html>

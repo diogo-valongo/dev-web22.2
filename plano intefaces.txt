@@ -15,12 +15,12 @@ Marcar condsulta:
 -dropdown coom espcialidade
 -dropdown com medico baseado na resposta de cima
 -campo pra escolha de data ?datepicker?
-Area Medico:
+Area Medico:                                                  
 -ver consultas
-- medico pode ralizar uma consulta (desde que não realizada)
+- medico pode realizar uma consulta (desde que não realizada)
 - medico pode alterar consultas já realidadas por ele
 area adm:
-- cadastra adm
+- cadastra adm                                          <-------------
 -- mostra tabela pra seleção (remoção e edição de administradores)
 -- form pra adicao
 --- nome
