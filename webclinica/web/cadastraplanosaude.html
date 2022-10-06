@@ -69,7 +69,75 @@ and open the template in the editor.
                 </div>
             </div>
         </nav>
-        <div>eu sou o cadastraplano</div>
+        <div class="container-sm mt-5">
+            <div>
+                <h2>Bem vindo(a) Administrador(substituir por nome quando possivel)</h2>
+                <h2 class="mt-5">Planos de saúde</h2>
+            </div>
+            <form>
+    
+                <table id="select-table" class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col"><input name="select_all" value="1" type="checkbox"></th>
+                            <th scope="col">Descrição</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><input name="plano1" value="1" type="checkbox"></th>
+                            <td>Unimed</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><input name="plano2" value="2" type="checkbox"></th>
+                            <td>Amil</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><input name="plano3" value="3" type="checkbox"></th>
+                            <td>SulAmérica</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><input name="plano4" value="4" type="checkbox"></th>
+                            <td>Particular</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><input name="plano5" value="5" type="checkbox"></th>
+                            <td colspan="1">Em breve funcionando juntamente com o banco de dados...</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="mt-2">
+                    <button type="submit" class="btn btn-danger mb-3">Remove selecionado(s)</button>
+                </div>
+                <h3>Novos Dados:</h3>
+                <div class="mb-3 col-3">
+                    <label for="descricao" class="form-label">Descrição</label>
+                    <input type="descricao" class="form-control" id="descricao" aria-describedby="emailHelp">
+                </div>
+                <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                    <button type="submit" class="btn btn-success">Novo plano de saúde</button>
+                    <button type="submit" class="btn btn-warning">Altera selecionado</button>
+                </div>
+            </form>
+        </div>
+        <script>
+            var dataTable = document.getElementById('select-table');
+            var checkItAll = dataTable.querySelector('input[name="select_all"]');
+            var inputs = dataTable.querySelectorAll('tbody>tr>th>input');
+    
+            checkItAll.addEventListener('change', function () {
+                if (checkItAll.checked) {
+                    inputs.forEach(function (input) {
+                        input.checked = true;
+                    });
+                }
+                else {
+                    inputs.forEach(function (input) {
+                        input.checked = false;
+                    });
+                }
+            });
+        </script>
         <script src="src/bootstrap/bootstrap.bundle.min.js"></script>
     </body>
 </html>

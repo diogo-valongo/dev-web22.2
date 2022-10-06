@@ -20,13 +20,12 @@ Area Medico:
 - medico pode realizar uma consulta (desde que não realizada)
 - medico pode alterar consultas já realidadas por ele
 area adm:
-- cadastra adm                                          <-------------
+- cadastra adm                                          
 -- mostra tabela pra seleção (remoção e edição de administradores)
 -- form pra adicao
 --- nome
 --- cpf
 --- senha
---- seleção de especialidade (dropdown baseado nas especialidades)
 
 - cadastra medico
 -- mostra tabela pra seleção (remoção e edição de medicos)
@@ -56,11 +55,11 @@ area adm:
 -- form pra adicao
 --- nome do plano 
 
-- controle de autorização de pacienteX
+- controle de autorização de paciente (isso ta dentro de alterar paciente)
 -- mostra tabela pra seleção pacientes
 -- botão autorizar e botão desautorizar
 
-- controle de autorização de medico
+- controle de autorização de medico (isso ta dentro de alterar paciente)
 -- mostra tabela pra seleção medicos
 -- botão autorizar e botão desautorizar
 
