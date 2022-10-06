@@ -76,7 +76,7 @@ and open the template in the editor.
             <form>
                 <div class="mb-3 col-3">                
                     <label class="form-label">Selecione uma especialidade</label>  
-                    <select class="mb-5 col-3 form-select" aria-label="Default select example">
+                    <select name="especialidade" class="mb-5 col-3 form-select" aria-label="Default select example">
                         <option selected>Selecione uma especialidade</option>
                         <option value="1">Especialidade 1</option>
                         <option value="2">Especialidade 2</option>
@@ -86,7 +86,7 @@ and open the template in the editor.
                 
                 <div class="mb-3 col-3">        
                     <label class="form-label">Selecione o médico</label>        
-                    <select class="mb-5 col-3 form-select" aria-label="Default select example">
+                    <select name="medico" class="mb-5 col-3 form-select" aria-label="Default select example">
                         <option selected>Selecione o medico</option>
                         <option value="1">Medico 1</option>
                         <option value="2">Medico 2</option>
@@ -94,8 +94,9 @@ and open the template in the editor.
                     </select>
                 </div>
                 <div class="mb-3 col-3">
-                    <label for="date" class="form-label">Selecione uma Data</label>
-                    <input type="date" class="form-control" id="date">
+                    <label for="date" class="form-label">Selecione uma Data e hora</label>
+                    <input name="data" type="date" class="form-control" id="date">
+                    <input type="time" class="form-control">
                 </div>
 
                 <button type="submit" class="btn btn-primary mb-3">Marcar consulta</button>
