@@ -1,9 +1,5 @@
 ## TO DO
-- TERMINAR AS TELAS: -obs:(falta só isso pra primeira entrega)
-    - cadastra paciente
-    - cadastra plano
-    - cadastra especialidade
-    - admconsultas
+- trocar todas as ocorrencias de html pra jsp, e instalar os bagulho no notebook
 
 - tem uns input que tão sem name... depois tem que acertar isso...
 
