@@ -1,9 +1,11 @@
+<%-- 
+    Document   : login
+    Created on : 13/10/2022, 16:55:59
+    Author     : dival
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
 
 <head>
@@ -16,7 +18,7 @@ and open the template in the editor.
 <body>
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">webclinica</a>
+            <a class="navbar-brand" href="index.jsp">webclinica</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -25,50 +27,50 @@ and open the template in the editor.
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link" aria-current="page" href="index.jsp">Home</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="paciente.html" role="button" data-bs-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle" href="paciente.jsp" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">Paciente</a>
 
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="paciente.html">Página principal</a></li>
+                            <li><a class="dropdown-item" href="paciente.jsp">Página principal</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="marcarconsulta.html">Marcar consulta</a></li>
+                            <li><a class="dropdown-item" href="marcarconsulta.jsp">Marcar consulta</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="medico.html">Médico</a>
+                        <a class="nav-link" href="medico.jsp">Médico</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="adm.html" role="button" data-bs-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle" href="adm.jsp" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">Administrador</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="adm.html">Página principal</a></li>
+                            <li><a class="dropdown-item" href="adm.jsp">Página principal</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="cadastraadm.html">Cadastra Administrador</a></li>
-                            <li><a class="dropdown-item" href="cadastramedico.html">Cadastra Medico</a></li>
-                            <li><a class="dropdown-item" href="cadastrapaciente.html">Cadastra Paciente</a></li>
-                            <li><a class="dropdown-item" href="cadastraespecialidade.html">Cadastra Especialidade</a>
+                            <li><a class="dropdown-item" href="cadastraadm.jsp">Cadastra Administrador</a></li>
+                            <li><a class="dropdown-item" href="cadastramedico.jsp">Cadastra Medico</a></li>
+                            <li><a class="dropdown-item" href="cadastrapaciente.jsp">Cadastra Paciente</a></li>
+                            <li><a class="dropdown-item" href="cadastraespecialidade.jsp">Cadastra Especialidade</a>
                             </li>
-                            <li><a class="dropdown-item" href="cadastraplanosaude.html">Cadastra Plano de Saude</a></li>
+                            <li><a class="dropdown-item" href="cadastraplanosaude.jsp">Cadastra Plano de Saude</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="admconsulta.html">Consulta</a></li>
+                            <li><a class="dropdown-item" href="admconsulta.jsp">Consulta</a></li>
                         </ul>
                     </li>
                 </ul>
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" href="login.html">Login</a>
+                        <a class="nav-link active" href="login.jsp">Login</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="registro.html">Registro</a>
+                        <a class="nav-link" href="registro.jsp">Registro</a>
                     </li>
                 </ul>
             </div>
@@ -103,7 +105,7 @@ and open the template in the editor.
             <button type="submit" class="btn btn-primary mb-3">Entrar</button>
         </form>
         <div>
-            <a class="mt-3" href="registro.html">não tem login? clique aqui</a>
+            <a class="mt-3" href="registro.jsp">não tem login? clique aqui</a>
         </div>
     </div>
 

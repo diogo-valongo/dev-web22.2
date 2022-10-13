@@ -1,13 +1,15 @@
+<%-- 
+    Document   : cadastraadm
+    Created on : 13/10/2022, 16:54:34
+    Author     : dival
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
 
 <head>
-    <title>webclinica - cadastra paciente</title>
+    <title>webclinica - cadastro adm</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="src/bootstrap/bootstrap.min.css" rel="stylesheet">
@@ -16,7 +18,7 @@ and open the template in the editor.
 <body>
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">webclinica</a>
+            <a class="navbar-brand" href="index.jsp">webclinica</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -25,50 +27,50 @@ and open the template in the editor.
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link" aria-current="page" href="index.jsp">Home</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="paciente.html" role="button" data-bs-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle" href="paciente.jsp" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">Paciente</a>
 
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="paciente.html">Página principal</a></li>
+                            <li><a class="dropdown-item" href="paciente.jsp">Página principal</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="marcarconsulta.html">Marcar consulta</a></li>
+                            <li><a class="dropdown-item" href="marcarconsulta.jsp">Marcar consulta</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="medico.html">Médico</a>
+                        <a class="nav-link" href="medico.jsp">Médico</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" href="adm.html" role="button"
+                        <a class="nav-link dropdown-toggle active" href="adm.jsp" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">Administrador</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="adm.html">Página principal</a></li>
+                            <li><a class="dropdown-item" href="adm.jsp">Página principal</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="cadastraadm.html">Cadastra Administrador</a></li>
-                            <li><a class="dropdown-item" href="cadastramedico.html">Cadastra Medico</a></li>
-                            <li><a class="dropdown-item" href="cadastrapaciente.html">Cadastra Paciente</a></li>
-                            <li><a class="dropdown-item" href="cadastraespecialidade.html">Cadastra Especialidade</a>
+                            <li><a class="dropdown-item" href="cadastraadm.jsp">Cadastra Administrador</a></li>
+                            <li><a class="dropdown-item" href="cadastramedico.jsp">Cadastra Medico</a></li>
+                            <li><a class="dropdown-item" href="cadastrapaciente.jsp">Cadastra Paciente</a></li>
+                            <li><a class="dropdown-item" href="cadastraespecialidade.jsp">Cadastra Especialidade</a>
                             </li>
-                            <li><a class="dropdown-item" href="cadastraplanosaude.html">Cadastra Plano de Saude</a></li>
+                            <li><a class="dropdown-item" href="cadastraplanosaude.jsp">Cadastra Plano de Saude</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="admconsulta.html">Consulta</a></li>
+                            <li><a class="dropdown-item" href="admconsulta.jsp">Consulta</a></li>
                         </ul>
                     </li>
                 </ul>
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="login.html">Login</a>
+                        <a class="nav-link" href="login.jsp">Login</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="registro.html">Registro</a>
+                        <a class="nav-link" href="registro.jsp">Registro</a>
                     </li>
                 </ul>
             </div>
@@ -77,7 +79,7 @@ and open the template in the editor.
     <div class="container-sm mt-5">
         <div>
             <h2>Bem vindo(a) Administrador(substituir por nome quando possivel)</h2>
-            <h2 class="mt-5">Pacientes</h2>
+            <h2 class="mt-5">Administradores</h2>
         </div>
         <form>
 
@@ -88,30 +90,24 @@ and open the template in the editor.
                         <th scope="col">Nome</th>
                         <th scope="col">CPF</th>
                         <th scope="col">Senha</th>
-                        <th scope="col">Autorizado</th>
-                        <th scope="col">Tipo do Plano</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <th scope="row"><input name="paciente1" value="1" type="checkbox"></th>
-                        <td>Maria</td>
-                        <td>937.397.160-37</td>
+                        <th scope="row"><input name="adm1" value="1" type="checkbox"></th>
+                        <td>Leo</td>
+                        <td>249.252.810-38</td>
                         <td>111</td>
-                        <td>Não</td>
-                        <td>Unimed</td>
                     </tr>
                     <tr>
-                        <th scope="row"><input name="paciente2" value="2" type="checkbox"></th>
+                        <th scope="row"><input name="adm2" value="2" type="checkbox"></th>
                         <td>Leo Segundo</td>
                         <td>249.252.810-39</td>
                         <td>112</td>
-                        <td>Sim</td>
-                        <td>Amil</td>
                     </tr>
                     <tr>
-                        <th scope="row"><input name="paciente3" value="3" type="checkbox"></th>
-                        <td colspan="5">Em breve funcionando juntamente com o banco de dados...</td>
+                        <th scope="row"><input name="adm3" value="3" type="checkbox"></th>
+                        <td colspan="3">Em breve funcionando juntamente com o banco de dados...</td>
                     </tr>
                 </tbody>
             </table>
@@ -131,21 +127,8 @@ and open the template in the editor.
                 <label for="senha" class="form-label">Senha</label>
                 <input type="password" class="form-control" id="senha">
             </div>
-            <div class="mb-3 col-3">
-                <label class="form-check-label" for="defaultCheck1">Autorizado</label>
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-            </div>
-            <div class="mb-2 col-3">                
-                <label class="form-label">Selecione um plano</label>  
-                <select name="plano" class="mb-5 col-3 form-select" aria-label="Default select example">
-                    <option selected>Selecione um Plano</option>
-                    <option value="1">Plano 1</option>
-                    <option value="2">Plano 2</option>
-                    <option value="3">Essa parte sera implementada mais tarde quando existir o aceso ao bd</option>
-                </select>
-            </div>
             <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                <button type="submit" class="btn btn-success">Novo paciente</button>
+                <button type="submit" class="btn btn-success">Novo administrador</button>
                 <button type="submit" class="btn btn-warning">Altera selecionado</button>
             </div>
         </form>
